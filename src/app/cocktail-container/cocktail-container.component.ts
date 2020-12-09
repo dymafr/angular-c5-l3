@@ -7,7 +7,7 @@ import { Cocktail } from "../interfaces/cocktail.interface";
   styleUrls: ["./cocktail-container.component.scss"]
 })
 export class CocktailContainerComponent implements OnInit {
-  public cocktail: Cocktail;
+  public selectedCocktail: Cocktail;
   public cocktails: Cocktail[] = [
     {
       name: "Mojito",
@@ -35,6 +35,6 @@ export class CocktailContainerComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.cocktail = this.cocktails[0];
+    this.selectedCocktail = this.cocktails[0];
   }
 }
